@@ -10,7 +10,7 @@ class TestBooksCollector:
         collector.add_new_book("Граф Монте-Кристо")
         assert "Граф Монте-Кристо" in collector.get_books_genre(), "Ошибка: Книга не добавлена"
 
-    # Тест для метода add_new_book с длинным названием
+    # Тест для метода add_new_book 40+
     def test_add_new_book_name_too_long(self):
         collector = BooksCollector()
         long_name = "Г" * 41  # Длиннее 40 символов
